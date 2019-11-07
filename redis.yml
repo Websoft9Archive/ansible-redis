@@ -13,9 +13,9 @@
 # 核心任务
 
 - name: redis
-  hosts: redis
+  hosts: all
   become: yes
   become_method: sudo
   roles:
-    - { role: common , tags: "common"}  
+    - {role: common, tags: "common"}  
     - {role: redis, tags: "redis"}
