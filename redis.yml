@@ -1,13 +1,13 @@
-# # 服务器前置任务(ubuntu使用)
-# - name: redis
-#   hosts: redis
-#   become: yes
-#   become_method: sudo
-#   gather_facts: False
-#   pre_tasks:
-#    - name: Install Python
-#      raw: sudo apt-get -y install python
-#   ignore_errors: yes
+# 服务器前置任务(ubuntu使用)
+- name: redis
+  hosts: redis
+  become: yes
+  become_method: sudo
+  gather_facts: False
+  pre_tasks:
+   - name: Install Python
+     raw: sudo apt-get -y install python
+  ignore_errors: yes
 
 
 # 核心任务
