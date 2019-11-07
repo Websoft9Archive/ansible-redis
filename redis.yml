@@ -1,6 +1,6 @@
 # 服务器前置任务(ubuntu使用)
 - name: redis
-  hosts: redis
+  hosts: all
   become: yes
   become_method: sudo
   gather_facts: False
