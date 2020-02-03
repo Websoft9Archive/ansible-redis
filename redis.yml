@@ -7,21 +7,23 @@
   gather_facts: True
 
   vars_prompt:
-    - name: 'mysql_version_number'
-      prompt: "\nPlease choose the number for MySQL version [ 1/2/3/4] \n
-      1: MySQL5.5(only for CentOS)\n
-      2: MySQL5.6(only for CentOS)\n
-      3: MySQL5.7\n
-      4: MySQL8.0(only for Ubuntu)\n"
+    - name: 'redis_version_number'
+      prompt: "\nPlease choose the number for Redis version [ 1/2/3/4] \n
+      1: Redis2.8\n
+      2: Redis3.0\n
+      3: Redis3.2\n
+      4: Redis4.0\n
+      5: Redis5.0\n"
       private: no
       default: 3
   vars:
     temp_ver:
-      '1': '5.5'
-      '2': '5.6'
-      '3': '5.7'
-      '4': '8.0'
-    mysql_version: "{{temp_ver[mysql_version_number]}}" 
+      '1': '2.8.24'
+      '2': '3.0.7'
+      '3': '3.2.13'
+      '4': '4.0.14'
+      '5': '5.0.7'
+    redis_version: "{{temp_ver[redis_version_number]}}" 
   
   vars_files:
     - vars/main.yml
