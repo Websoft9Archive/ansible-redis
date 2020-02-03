@@ -1,0 +1,26 @@
+# 可视化管理
+
+我们推荐使用官方提供免费可视化管理工具 RedisInsight（[下载](https://redislabs.com/redisinsight/) | [Licence](https://redislabs.com/redis-insight-license-terms)） 。它是一个基于浏览器运行的GUI工具，支持 Windows，Linux和Mac OS系统运行。
+
+## 连接
+
+以Windows为例，下载安装文件，双击安装直至完成
+
+1. 启动桌面的RedisInsight图标，点击主页
+  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-ss-websoft9.png)
+
+2. 新建一个数据库连接
+  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add-websoft9.png)
+
+3. 输入redis数据库连接信息（[如何开启远程连接？](/zh/solution-remote.md)）
+  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add002-websoft9.png)
+
+4. 点击已经建立好的连接
+  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add003-websoft9.png)
+
+5. 进入RedisInsight控制台页面
+  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-overview-websoft9.png)
+
+## 使用
+
+RedisInsight 的功能十分强大，集管理、监控、配置和分析于一体，甚至还可以运行CLI命令
