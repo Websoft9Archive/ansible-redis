@@ -12,18 +12,18 @@
 
 - name: Download Redis Source Code
   unarchive:
-    src: http://download.redis.io/releases/redis-{{redis_ver}}.tar.gz
+    src: http://download.redis.io/releases/redis-{{redis_version}}.tar.gz
     dest: /opt/
     remote_src: yes
 
 - name: Install redis
   shell: make && make install
   args:
-    chdir: /opt/redis-{{redis_ver}}
+    chdir: /opt/redis-{{redis_version}}
 
 - name: Delte redis source code
   file:
-    path: /opt/redis-{{redis_ver}}
+    path: /opt/redis-{{redis_version}}
     state: absent
 
 - name: create redis dir
@@ -33,6 +33,7 @@
   with_items:
     - /etc/redis
     - /data/redis
+    - /log/redis
 
 - name: Copy redis config
   copy:
@@ -58,12 +59,13 @@
   with_items:
     - {src:  /var/log/redis.log,dest: /data/logs/redis.log} 
     - {src:  /etc/redis,dest: /data/config/redis} 
-
-
+    - {src:  /etc/redis/redis.conf,dest: /etc/redis.conf} 
+    - {src: /data/redis,dest: /var/lib/redis} 
 
 - name: Check redis Version
   shell: /usr/local/bin/redis-server -v
-  register: redis_ver
+  register: redis_version
   args:
     executable: /bin/bash
   notify: [redis Version,Check redis Server]
+
