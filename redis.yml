@@ -1,21 +1,33 @@
-# 服务器前置任务(ubuntu使用)
-- name: redis
-  hosts: all
-  become: yes
-  become_method: sudo
-  gather_facts: False
-  pre_tasks:
-   - name: Install Python
-     raw: sudo apt update && sudo apt-get -y install python
-  ignore_errors: yes
-
-
 # 核心任务
 
 - name: redis
   hosts: all
   become: yes
   become_method: sudo
+  gather_facts: True
+
+  vars_prompt:
+    - name: 'mysql_version_number'
+      prompt: "\nPlease choose the number for MySQL version [ 1/2/3/4] \n
+      1: MySQL5.5(only for CentOS)\n
+      2: MySQL5.6(only for CentOS)\n
+      3: MySQL5.7\n
+      4: MySQL8.0(only for Ubuntu)\n"
+      private: no
+      default: 3
+  vars:
+    temp_ver:
+      '1': '5.5'
+      '2': '5.6'
+      '3': '5.7'
+      '4': '8.0'
+    mysql_version: "{{temp_ver[mysql_version_number]}}" 
+  
+  vars_files:
+    - vars/main.yml
+
   roles:
-    - {role: common, tags: "common"}  
-    - {role: redis, tags: "redis"}
+    - {role: role_common, tags: "role_common"}  
+    - {role: role_cloud, tags: "role_cloud"}  
+    - {role: role_redis, tags: "role_redis"}  
+    - {role: role_end, tags: "role_end"}
