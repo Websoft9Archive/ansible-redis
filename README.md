@@ -25,12 +25,13 @@
 ```
   vars_prompt:
     - name: 'redis_version_number'
-      prompt: "\nPlease choose the number for Redis version [ 1/2/3/4/5] \n\n
+      prompt: "\nPlease choose the number for Redis version [ 1/2/3/4/5/6] \n\n
       1: Redis2.8\n
       2: Redis3.0\n
       3: Redis3.2\n
       4: Redis4.0\n
-      5: Redis5.0\n"
+      5: Redis5.0\n
+      5: Redis-Latest\n"
       private: no
       default: 3
   vars:
@@ -40,7 +41,10 @@
       '3': '3.2.13'
       '4': '4.0.14'
       '5': '5.0.7'
+      '6': 'stable'
 ```
+
+Redis-Latest 是官方发布的最新Stable版本，但还没有形成正式的发行版  
 
 我们会定期检查版本准确性，并增加官方最新的stable版本，以保证用户可以顺利安装所需的Redis版本。
 
