@@ -4,15 +4,7 @@
 
 ## Redis
 
-管理员用户名：`admin`  
-管理员密码： `password` or `admin` 
-
-## PostgreSQL
-
-本部署方案中，PostgreSQL 采用 Docker 部署：
-
-* 管理员账号：*`postgres`*
-* 管理员密码：存储在您的服务器指定文件中：*/data/.awx/awxcompose/credentials.py*。
+默认没有开启密码验证 
 
 ## Linux
 

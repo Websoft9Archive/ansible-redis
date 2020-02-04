@@ -2,7 +2,7 @@
 
 #### 什么是Redis客户端？
 
-redis-cli 就是典型的客户端工具
+Redis 客户端是用于与Redis-Server进行通信的程序，例如：redis-cli 就是典型的客户端工具
 
 #### Redis Labs 与 Redis 有什么关系？
 
@@ -12,25 +12,17 @@ redis-cli 就是典型的客户端工具
 
 可以无需设置密码验证
 
-#### Redis API 地址是多少？
+#### Redis 支持哪些数据结构？
 
-http://Redis Server Internet IP/api/
-
-#### Redis 支持JSON格式吗？
-
-支持，详情[参考](https://oss.redislabs.com/redisjson/commands/)
-
-#### 数据库 Postgres 用户对应的密码是多少？
-
-密码存放在服务器相关文件中：`/credentials/password.txt`
+Redis不是简单的键值存储，它实际上是一个数据结构服务器，支持不同类型的值。包括：二进制字符串、列表、集合、哈希、位图、HyperLogLogs、流等
 
 #### 是否有可视化的数据库管理工具？
 
-为了安全考虑，没有提供可视化的数据库管理工具
+部分Redis镜像已经安装 RedisInsight 这个可视化管理工具，如果没有安装，您可以自行安装。
 
 #### 是否可以修改Redis的源码路径？
 
-采用 Docker 安装，不可以修改
+不可以修改
 
 #### 部署和安装有什么区别？
 
