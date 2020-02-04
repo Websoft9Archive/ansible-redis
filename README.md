@@ -31,7 +31,7 @@
       3: Redis3.2\n
       4: Redis4.0\n
       5: Redis5.0\n
-      5: Redis-Latest\n"
+      6: Redis-Latest\n"
       private: no
       default: 3
   vars:
