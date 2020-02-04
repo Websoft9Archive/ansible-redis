@@ -1,4 +1,4 @@
-# 配置文件
+# CONFIG
 
 Redis 的配置可以通过修改 redis.conf 文件实现，也可以先通过 redis-cli 登录后，在运行 **CONFIG** 命令查看或设置配置项。  
 

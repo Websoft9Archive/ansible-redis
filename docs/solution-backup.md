@@ -49,8 +49,10 @@ Manual backup for application is based on the **Exporting source code and databa
 ```
 The general manual backup operation steps are as follows:
 
-1. Just compression and download the entire **[Redis storage directory](/stack-components.md#awx)** by SFTP 
-2. Export Redis's database
-3. Put the source code file and database file in the same folder, named according to the date
-4. Backup completed
-
+1. 使用SSH登录服务器，使用redis-cli工具运行**SAVE** 命令
+```shell
+[root@cdl-test ~]# redis-cli
+127.0.0.1:6379> SAVE
+OK
+```
+2. You can find the bakcup file `dump.rdb` in the  */var/lib/redis*

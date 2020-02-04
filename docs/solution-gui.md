@@ -1,4 +1,4 @@
-# 可视化管理
+# Redis GUI
 
 我们推荐使用官方提供免费可视化管理工具 RedisInsight（[下载](https://redislabs.com/redisinsight/) | [Licence](https://redislabs.com/redis-insight-license-terms)） 。它是一个基于浏览器运行的GUI工具，支持 Windows，Linux和Mac OS系统运行。
 

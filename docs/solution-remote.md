@@ -1,4 +1,4 @@
-# 设置 Redis 远程访问
+# Redis remote connection
 
 当你想通过本地的电脑的Redis客户端（例如：RedisInsight）连接服务器上的Redis的时候，就需要设置 Redis 的远程访问。
 

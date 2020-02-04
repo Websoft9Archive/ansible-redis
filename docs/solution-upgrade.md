@@ -26,24 +26,7 @@ yum update -y
 
 ## Redis Upgrade
 
-Upgrading Redis involves rerunning the install playbook. Download a newer release from https://github.com/ansible/awx/releases and re-populate the inventory file with your customized variables.
+除了 Redis 5.0 以上版本之外，Redis已经是各个发行版的最新版本。
 
-For convenience, you can create a file called *update-vars.yml*:
-
-1. Use **SFTP** to connect Server
-2. Go to the directory */data/awx/* and update this repository from Github
-   ```
-   sudo cd /data/awx && git pull
-   ```
-3. Go to the directory: */data/awx/installer* 
-4. Create new file named *update-vars.yml* and add the template to it like below(make sure all password is your correct password) 
-   ```
-   admin_password: 'adminpass'
-   pg_password: 'pgpass'
-   rabbitmq_password: 'rabbitpass'
-   secret_key: 'mysupersecret'
-   ```
-5. Run the update commands like below
-   ```
-   ansible-playbook -i inventory install.yml -e @update-vars.yml
+如何更新 Redis 5.0  到 Redis 6.0 呢？ 暂时还没有方案
    ```

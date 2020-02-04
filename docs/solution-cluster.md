@@ -1,4 +1,4 @@
-# Redis部署架构
+# Redis deployment architecture
 
 一张图看清典型的Redis部署架构：  
 
