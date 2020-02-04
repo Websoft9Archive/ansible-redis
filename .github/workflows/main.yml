@@ -17,7 +17,7 @@ jobs:
     - name: vuepress build
       run: |
         cd docs
-        vuepress build .
+        sudo vuepress build .
         git clone https://github.com/Websoft9/websoft9.github.io.git
         cp -r html/*  websoft9.github.io/docs/
         sudo chown -R runner: websoft9.github.io
