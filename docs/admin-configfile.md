@@ -1,6 +1,6 @@
 # CONFIG
   
-Redis 的配置可以通过修改 redis.conf 文件实现，也可以先通过 redis-cli 登录后，在运行 **CONFIG** 命令查看或设置配置项。  
+You can configure Redis by modify `redis.conf` file, and run the **CONFIG** command of redis-cli by SSH  
 
 **CONFIG** 可以查询配置项，也可以编辑配置项：
 
