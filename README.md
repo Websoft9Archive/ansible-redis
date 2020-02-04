@@ -25,7 +25,7 @@
 ```
   vars_prompt:
     - name: 'redis_version_number'
-      prompt: "\nPlease choose the number for Redis version [ 1/2/3/4] \n
+      prompt: "\nPlease choose the number for Redis version [ 1/2/3/4/5] \n\n
       1: Redis2.8\n
       2: Redis3.0\n
       3: Redis3.2\n
