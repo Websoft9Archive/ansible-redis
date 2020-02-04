@@ -18,7 +18,7 @@
 
 ## 本项目安装的是 Redis 最新版吗？
 
-本项目是下载[Redis源码](http://download.redis.io/releases/)源码，再编译安装。  
+本项目是下载[Redis源码](http://download.redis.io/releases/)，再编译安装。  
 
 查看 [redis.yml](/redis.yml) 文件中版本选择的内容，来查看和维护具体的详细版本号
 

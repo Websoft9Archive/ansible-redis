@@ -6,15 +6,13 @@ home: false
 
 This documentation is provided by [Websoft9](https://www.websoft9.com/), it can help users to acquire skills of Redis Deployment, Installation, Configuration, HTTPS, SMTP, Backup, Upgrade, Connect Instance and more.
 
-[Redis](https://github.com/ansible/awx) is the Ansible Tower's open source edition,Redis provides a web-based user interface, REST API, and task engine built on top of Ansible. It is the upstream project for Tower, a commercial derivative of Redis.
+[Redis](https://redis.io/) is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.  
 
-![](https://libs.websoft9.com/Websoft9/DocsPicture/en/awx/awxui-websoft9.png)
-
----
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis-gui-websoft9.png)
 
 ## Improve
 
-This document will continue to improve and broadly absorb the needs of users. If you have good idea, please don't hesitate to give us feedback by "Edit this page on GitHub", and welcome you to fork this documentation on [Github](https://github.com/Websoft9/ansible-awx)
+This document will continue to improve and broadly absorb the needs of users. If you have good idea, please don't hesitate to give us feedback by "Edit this page on GitHub", and welcome you to fork this documentation on [Github](https://github.com/Websoft9/ansible-redis)
 
 ## Scope
 
