@@ -12,7 +12,7 @@
 
 ## 组件
 
-包含的核心组件为：可选 Redis2.8.24/3.0.7/3.2.13/4.0.14/5.0.7 多个版本
+包含的核心组件为：可选 Redis2.8.24/3.0.7/3.2.13/4.0.14/5.0.7/stable 多个版本
 
 更多请见[参数表](/docs/zh/stack-components.md)
 
@@ -73,5 +73,4 @@ wget -N https://raw.githubusercontent.com/Websoft9/linux/master/ansible_script/i
 
 ## FAQ
 
-- 命令脚本部署与镜像部署有什么区别？请参考[镜像部署-vs-脚本部署](https://support.websoft9.com/docs/faq/zh/bz-product.html#镜像部署-vs-脚本部署)
-- 本项目支持在 Ansible Tower 上运行吗？支持
+- 命令脚本部署与镜像部署有什么区别？请参考[镜像部署-vs-脚本
