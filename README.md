@@ -33,7 +33,7 @@
       5: Redis5.0\n
       6: Redis-Latest\n"
       private: no
-      default: 3
+      default: 6
   vars:
     temp_ver:
       '1': '2.8.24'
