@@ -6,7 +6,7 @@ Redis 客户端是用于与Redis-Server进行通信的程序，例如：redis-cl
 
 #### Redis Labs 与 Redis 有什么关系？
 
-[Redis Labs}(https://redislabs.com/) 是 Redis 的母公司，即 Redis 是 Redis Labs 公司旗下的产品。
+[Redis Labs](https://redislabs.com/) 是 Redis 的母公司，即 Redis 是 Redis Labs 公司旗下的产品。
 
 #### Redis需要密码才能登录吗？
 
