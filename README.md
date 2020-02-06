@@ -7,7 +7,7 @@
 
 ## 配置要求
 
-操作系统：目支持 CentOS7.x, Ubuntu, Debian 以上部署此脚本，确保是干净的操作系统  
+操作系统：目支持 CentOS7.x, Ubuntu18.04, Amazon Linux2 以上部署此脚本，确保是干净的操作系统  
 硬件配置：最低1核1G
 
 ## 组件
