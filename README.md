@@ -8,6 +8,13 @@
 ## 配置要求
 
 操作系统：目支持 CentOS7.x, Ubuntu18.04, Amazon Linux2 以上部署此脚本，确保是干净的操作系统  
+
+| 发行版       | 版本  |
+| ------------ | ----- |
+| CentOS       | 7.x   |
+| Ubuntu       | 18.04 |
+| Amazon Linux | 2     |
+
 硬件配置：最低1核1G
 
 ## 组件
@@ -74,3 +81,7 @@ wget -N https://raw.githubusercontent.com/Websoft9/linux/master/ansible_script/i
 ## FAQ
 
 - 命令脚本部署与镜像部署有什么区别？请参考[镜像部署-vs-脚本
+
+## To do
+
+* 增加可选的GUI工具 redisinsight
