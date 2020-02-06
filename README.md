@@ -9,11 +9,11 @@
 
 **操作系统**  
 
-| 发行版       | 版本  |
-| ------------ | ----- |
-| CentOS       | 7.x   |
-| Ubuntu       | 18.04 |
-| Amazon Linux | 2     |
+| 发行版       | 发行版       | 版本  |
+| ------------ | ------------ | ----- |
+| CentOS       | CentOS       | 7.x   |
+| Ubuntu       | Ubuntu       | 18.04 |
+| Amazon Linux | Amazon Linux | 2     |
 
 **硬件配置**  
 
