@@ -1,7 +1,7 @@
 
 # Redis 自动化安装与部署
 
-本项目是由 [Websoft9](http://www.websoft9.com) 研发的 [Redis](https://redis.io/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 Redis，让原本复杂的安装过程变得没有任何技术门槛。  
+本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [Redis](https://redis.io/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 Redis，让原本复杂的安装过程变得没有任何技术门槛。  
 
 本项目是开源项目，采用 LGPL3.0 开源协议。
 
@@ -16,7 +16,6 @@
 | 私有云|  KVM, VMware, VirtualBox, OpenStack |  |
 | 服务器配置 | 最低1核1G，安装时所需的带宽不低于10M |  建议采用按量100M带宽 |
 
-
 ## 组件
 
 包含的核心组件为：可选 Redis2.8.24/3.0.7/3.2.13/4.0.14/5.0.7/stable 多个版本
@@ -25,7 +24,7 @@
 
 ## 本项目安装的是 Redis 最新版吗？
 
-本项目是下载[Redis源码](http://download.redis.io/releases/)，再编译安装。  
+本项目是下载[Redis源码](http://download.redis.io/releases/)，再通过编译安装。 启动安装后，安装过程会提示用户选择一个Redis版本。
 
 查看 [redis.yml](/redis.yml) 文件中版本选择的内容，来查看和维护具体的详细版本号
 
@@ -61,16 +60,14 @@ Redis-Latest 是官方发布的最新Stable版本，但还没有形成正式的�
 
 ```
 #一键自动化安装命令
-wget -N https://raw.githubusercontent.com/Websoft9/linux/master/ansible_script/install.py ; python install.py playb=redis url=https://github.com/Websoft9/ansible-redis.git init=0 ansible=y
+wget -N https://raw.githubusercontent.com/Websoft9/linux/master/ansible_script/install.sh ; bash install.sh repository=redis
 
 ```
-
 > 若以非root用户登录Linux，需运行 `sudo su -` 提升为 root 权限，方可运行上述脚本。
-
 
 注意：  
 
-1. 自动化脚本
+1. 安装过程中，若有操作不慎或网络发生变化，可能会导致SSH连接被中断，安装就会失败，此时请重新安装
 2. 由于自动化安装过程中有大量下载任务，若网络不通（或速度太慢）会引起下载失败，从而导致安装程序终止运行。此时，请重置服务器后再次尝试安装，若仍然无法完成，请使用我们在公有云上发布的 [Redis 镜像](https://apps.websoft9.com/redis) 的部署方式
 
 
