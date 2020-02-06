@@ -56,14 +56,13 @@ Redis-Latest 是官方发布的最新Stable版本，但还没有形成正式的�
 
 ## 安装指南
 
-以 root 用户登录 Linux，运行下面的**一键自动化安装命令**即可启动自动化部署。若没有root用户，请以其他用户登录Linux后运行 `sudo su -` 命令提升为 root 权限，然后再运行下面的脚本。
+以 root 用户登录 Linux，运行下面的**一键自动化安装命令**即可启动自动化部署。若没有 root 用户，请以其他用户登录 Linux 后运行 `sudo su -` 命令提升为 root 权限，然后再运行下面的脚本。
 
 ```
 wget -N https://raw.githubusercontent.com/Websoft9/linux/master/ansible_script/install.sh ; bash install.sh repository=redis
-
 ```
 
-脚本后启动，就开始自动化安装，必要时需要用户做出交互式选择，然后耐心等待直至安装成功。
+脚本后启动，就开始了自动化安装，必要时需要用户做出交互式选择，然后耐心等待直至安装成功。
 
 注意：  
 
