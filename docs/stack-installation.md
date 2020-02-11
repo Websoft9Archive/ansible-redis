@@ -5,14 +5,14 @@ If you have completed the Redis deployment on Cloud Platform, the following step
 ## Preparation
 
 1. Get the **Internet IP** on your Cloud Platform
-2. Check you **[Inbound of Security Group Rule](https://support.websoft9.com/docs/faq/tech-instance.html)** of Cloud Console to ensure the **TCP:6379** is allowed
+2. Check your **[Inbound of Security Group Rule](https://support.websoft9.com/docs/faq/tech-instance.html)** of Cloud Console to ensure the **TCP:6379** is allowed
 3. Make a domain resolution on your DNS Console if you want to use domain for Redis
 
 ## Redis check
 
-1. 通过 SSH 工具连接 Redis服务器
+1. Use **SSH** tool to connect Redis Server
 
-2. 运行 Redis Service 命令
+2. Run the command `sudo systemctl status redis` to check the service state of Redis
    ```
    ubuntu@redis:~$ sudo systemctl status redis 
    redis.service - redis
@@ -21,12 +21,12 @@ If you have completed the Redis deployment on Cloud Platform, the following step
    Process: 31972 ExecStart=/usr/local/bin/redis-server /etc/redis/redis.conf (co
    Main PID: 31973 (redis-server)
    ```
-3. 运行版本查询命令
+3. Run the command `sudo systemctl status redis` to check the version of Redis
    ```
    ubuntu@redis:~$ sudo redis-server -v
    Redis server v=2.8.24 sha=00000000:0 malloc=jemalloc-3.6.0 bits=64 build=ba7fac81f854c786
    ```
-4. 运行 Redis CLI 命令
+4. Go to **Redis CLI** to test it
    ```
    ubuntu@redis:~$ redis-cli
    127.0.0.1:6379>
@@ -35,10 +35,11 @@ If you have completed the Redis deployment on Cloud Platform, the following step
 
 ## Q&A 
 
-#### 远程无法连接 Redis？
+#### Can't connect Redis from remote?
 
-请检查服务器对应的安全组6379端口是否开启（入规则），且Redis配置文件中是否允许外部访问
+1. Check your **[Inbound of Security Group Rule](https://support.websoft9.com/docs/faq/tech-instance.html)** of Cloud Console to ensure the **TCP:6379** is allowed
+2. Check your **Redis configuration file** that Redis allowed from Internet
 
-#### 本部署是否提供Web版的可视化管理工具？
+#### Is there any Web-GUI tool for Redis in this deployment solution?
 
-没有，我们暂时还没有发现稳定可靠的 Web-GUI for Redis
+No, you can refer to [Redis GUI](/solution-gui.md) chapter of this docs
