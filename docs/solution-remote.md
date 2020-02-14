@@ -1,21 +1,17 @@
 # Redis remote connection
 
-当你想通过本地的电脑的Redis客户端（例如：RedisInsight）连接服务器上的Redis的时候，就需要设置 Redis 的远程访问。
+When you want to use local terminal to connect Redis-Sever,you need to configure remote connection at first.
 
-数据库是高安全应用，设置远程访问，最少两个独立的步骤：
+There need at least two step for this configuration of Redis:
 
-## 安全组放通6379端口
+## Enable TCP:6379 port
 
-一般来说，MySQL使用的是6379端口。  
-
-首先，我们要登录到云控制台，打开云服务器所在的安全组中，保证6379端口是开启的。
+Check your **[Inbound of Security Group Rule](https://support.websoft9.com/docs/faq/tech-instance.html)** of Cloud Console to ensure the **TCP:6379** is allowed
 
 
-## 开启Redis远程连接
+## Enable connection from all the network 
 
-安全组开启后，还没有完成Redis远程方案的设置。  
-
-接下来，还需要对 Redis 配置文件进行检查，以便其接受外部网络的访问。下面配置内容表示没有限制任何IP访问：
+You should check your [Redis configuration file](/stack-components.md#redis) the following segment
 
 ```
 # By default Redis listens for connections from all the network interfaces
@@ -28,5 +24,3 @@
 # bind 192.168.1.100 10.0.0.1
 # bind 127.0.0.1
 ```
-
-如果要关闭任何IP访问，仅限于本机访问，去掉"#"，重启服务。

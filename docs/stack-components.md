@@ -34,5 +34,5 @@ You can see the version from product page of Marketplace. However, after being d
 lsb_release -a
 
 # Python Version
-redis -v
+redis-server -v
 ```

@@ -1,17 +1,14 @@
 # Redis CLI
 
-## 关于
+## About it
 
-redis-cli 是Redis命令行界面，这是一个简单的程序，可以将命令直接发送到Redis，并直接从终端读取服务器发送的回复。
+redis-cli is the Redis command line interface, a simple program that allows to send commands to Redis, and read the replies sent by the server, directly from the terminal.
 
-它有两种主要模式：
+It has two main modes: 
+* an interactive mode where there is a REPL (Read Eval Print Loop) where the user types commands and get replies; 
+* and another mode where the command is sent as arguments of redis-cli, executed, and printed on the standard output.
 
-* 交互式模式，其中存在一个REPL（读取评估打印循环），用户可以在其中键入命令并获得答复；
-* 另一种模式是将命令作为的参数发送redis-cli，执行并打印在标准输出上。
-
-## 使用
-
-常用命令包括：
+## Command line usage
 
 | **Command** | **Description** |
 | --- | --- |
@@ -20,4 +17,4 @@ redis-cli 是Redis命令行界面，这是一个简单的程序，可以将命�
 | CONFIG GET dir | Restore Data |
 | INFO | Manage Redis services |
 
-详情查看官方文档：https://redis.io/topics/rediscli
+More details please read the official docs: https://redis.io/topics/rediscli

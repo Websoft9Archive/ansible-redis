@@ -1,33 +1,34 @@
 # Redis GUI
 
-我们推荐使用官方提供免费可视化管理工具 RedisInsight（[下载](https://redislabs.com/redisinsight/) | [Licence](https://redislabs.com/redis-insight-license-terms)） 。它是一个基于浏览器运行的GUI工具，支持 Windows，Linux和Mac OS系统运行。
+We suggest you use the GUI tool **RedisInsight**([download](https://redislabs.com/redisinsight/) | [Licence](https://redislabs.com/redis-insight-license-terms)) powered by **Redis Labs** to manage your Redis. It's a web-base GUI which can be installed on Windows, Linux, Mac OS.
 
-## 本地使用
-
-以Windows系统为例，本地电脑[下载](https://redislabs.com/redisinsight/) 安装文件，双击安装直至完成
-
-1. 启动桌面的RedisInsight图标，点击主页
-  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-ss-websoft9.png)
-
-2. 新建一个数据库连接
-  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add-websoft9.png)
-
-3. 输入redis数据库连接信息（[如何开启远程连接？](/zh/solution-remote.md)）
-  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add002-websoft9.png)
-
-4. 点击已经建立好的连接
-  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add003-websoft9.png)
-
-5. 进入RedisInsight控制台页面
-  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-overview-websoft9.png)
+RedisInsight is very powerful. It integrates management, monitoring, configuration and analysis, and can even run CLI commands.
 
 
-## 在线使用
+## Instructions from local 
 
-如果你使用的Redis部署方案中已经包含 RedisInsight，便可以直接在线使用  
+If you want to use **RedisInsight** from your local Windows computer, 
 
-访问：*http://服务器公网IP:8001* ，即可打开 RedisInsight
+1. [Download RedisInsight](https://redislabs.com/redisinsight/) and install it
 
-## 功能
+2. Open the RedisInsight icon on your desktop and click the **homepage** link
+  ![RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-ss-websoft9.png)
 
-RedisInsight 的功能十分强大，集管理、监控、配置和分析于一体，甚至还可以运行CLI命令
+3. Create new connection
+  ![RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add-websoft9.png)
+
+3. Input your Redis connection([make sure to enable remote connection?](solution-remote.md))
+  ![RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add002-websoft9.png)
+
+4. Open the your connection created
+  ![RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add003-websoft9.png)
+
+5. You can see the **RedisInsight** console now
+  ![RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-overview-websoft9.png)
+
+
+## Instructions from online
+
+If your Redis deployment solution already includes RedisInsight, you can use it directly online  
+
+Visit the URL: *http://Internet IP:8001* to open RedisInsight
