@@ -2,13 +2,9 @@
   
 You can configure Redis by modify `redis.conf` file, and run the **CONFIG** command of redis-cli by SSH  
 
-**CONFIG** 可以查询配置项，也可以编辑配置项：
+## Get configuration items
 
-## 查询配置项
-
-Redis CONFIG 命令格式范例如下： 
-
-通过运行：`CONFIG GET *` 命令，查询所有配置项
+run the command: `CONFIG GET *` to list all configuration items
 
 ```
   127.0.0.1:6379> CONFIG GET *
@@ -136,22 +132,22 @@ Redis CONFIG 命令格式范例如下：
 122) ""
 ```
 
-通过运行：`CONFIG GET CONFIG_SETTING_NAME` 命令，查询指定项
+run the command: `CONFIG GET CONFIG_SETTING_NAME` to get the specified item
 
 ```
 127.0.0.1:6379> CONFIG GET loglevel
 1) "loglevel"
 2) "notice"
 ```
-## 编辑配置项
+## Edit configuration item
 
-你可以通过修改 `redis.conf` 文件或使用 CONFIG set 命令来修改配置。
+You can modify the  `redis.conf` file directly or use **CONFIG set** for configuration
 
-**语法格式：**
+**commands Syntax format:**
 
 redis 127.0.0.1:6379> CONFIG SET CONFIG_SETTING_NAME NEW_CONFIG_VALUE
 
-下面是设置范例：  
+Following is example:  
 
 ```
 127.0.0.1:6379> CONFIG SET loglevel "notice"

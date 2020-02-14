@@ -4,28 +4,20 @@ A picture to see the typical Redis deployment architecture:
 
 ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis-cluster-architecture.png)
 
-## Single database
+## Single
 
-单机是最简单的一种模式
+Single database is the best simple architecture
 
-## HA database
+## Replication
 
-对Redis来说，主从也就是我们所说的主从复制，主服务器数据更新后根据配置和策略，自动同步到备份服务的一种机制。通常也被称之为：Master-Slave，其中Master以写为主，Slave以读为主。  
+At the base of Redis replication (excluding the high availability features provided as an additional layer by Redis Cluster or Redis Sentinel) there is a very simple to use and configure leader follower (master-slave) replication: it allows replica Redis instances to be exact copies of master instances. The replica will automatically reconnect to the master every time the link breaks, and will attempt to be an exact copy of it regardless of what happens to the master.  
 
-这样做的好处显而易见：
+More details refer to docs: https://redis.io/topics/replication
 
-* 读写分离
-* 容灾恢复
+## Cluster or Sentinel
 
-详细部署方案请参考官方文档：https://redis.io/topics/replication
+Redis Sentinel provides high availability for Redis. In practical terms this means that using Sentinel you can create a Redis deployment that resists without human intervention certain kinds of failures.
 
-## Clustered database
+Redis Sentinel also provides other collateral tasks such as monitoring, notifications and acts as a configuration provider for clients.  
 
-Redis所以很适合用来充当整个互联网架构中各级之间的Cache，为了在大流量访问下提供稳定的业务，Redis集群化是存储的必然形态。
-Redis Cluster 是官方提供的一种集群方案，通常具有 高可用、可扩展性、分布式、容错等特性。
-
-详细部署方案请参考官方文档：https://redis.io/topics/sentinel
-
-## HA Clustered database
-
-高可用性集群即分布式集群，即多个集群组合。
+More details refer to docs: https://redis.io/topics/sentinel

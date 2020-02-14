@@ -49,7 +49,7 @@ Manual backup for application is based on the **Exporting source code and databa
 ```
 The general manual backup operation steps are as follows:
 
-1. 使用SSH登录服务器，使用redis-cli工具运行**SAVE** 命令
+1. Use SSH to connect Redis server, then run the **SAVE** on redis-cli
 ```shell
 [root@cdl-test ~]# redis-cli
 127.0.0.1:6379> SAVE

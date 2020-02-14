@@ -10,6 +10,9 @@
 建议先通过命令进行排查  
 
 ```shell
+# 重启服务
+sudo systemctl restart redis
+
 # 查看磁盘空间
 df -lh
 

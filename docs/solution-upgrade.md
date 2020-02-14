@@ -1,6 +1,6 @@
 # Update & Upgrade
 
-Updates and upgrades are one of the maintenance tasks for sytem. Programs that are not upgraded for a long time, like buildings that are not maintained for a long time, will accelerate aging and gradually lose functionality until they are unavailable.
+Updates and upgrades are one of the maintenance tasks for system. Programs that are not upgraded for a long time, like buildings that are not maintained for a long time, will accelerate aging and gradually lose functionality until they are unavailable.
 
 You should know the differences between the terms **Update** and **Upgrade**([Extended reading](https://support.websoft9.com/docs/faq/tech-upgrade.html#update-vs-upgrade))
 - Operating system patching is **Update**, Ubuntu16.04 to Ubuntu18.04 is **Upgrade**
@@ -26,7 +26,4 @@ yum update -y
 
 ## Redis Upgrade
 
-除了 Redis 5.0 以上版本之外，Redis已经是各个发行版的最新版本。
-
-如何更新 Redis 5.0  到 Redis 6.0 呢？ 暂时还没有方案
-   ```
+There's not need to upgrade under the version 5.0.x. 
