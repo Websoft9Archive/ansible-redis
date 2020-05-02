@@ -1,6 +1,6 @@
 # 核心任务
 
-- name: redis
+- name: Redis
   hosts: all
   become: yes
   become_method: sudo
