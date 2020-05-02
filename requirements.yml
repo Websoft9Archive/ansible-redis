@@ -4,6 +4,9 @@
 - src: https://github.com/websoft9dev/role_cloud
   version: master
 
+- src: https://github.com/websoft9dev/role_nginx
+  version: master
+
 - src: https://github.com/websoft9dev/role_redis
   version: master
 
