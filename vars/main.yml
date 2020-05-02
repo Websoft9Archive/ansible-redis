@@ -1,1 +1,2 @@
 nginx_reverse_proxy_port: "8001"
+nginx_listen_port: "8002"
