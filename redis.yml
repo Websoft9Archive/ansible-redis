@@ -7,7 +7,7 @@
   gather_facts: True
 
   vars_prompt:
-    - name: 'redis_version_number'
+    - name: 'redis_version_selection'
       prompt: "\nPlease choose the number for Redis version [ 1/2/3/4/5/6] \n\n
       1: Redis2.8\n
       2: Redis3.0\n
@@ -17,15 +17,31 @@
       6: Redis-Latest\n"
       private: no
       default: 6
+      
+    - name: 'redis_insight_selection'
+      prompt: "\nDon you want to install GUI tool RedisInsight? [ 1/2] \n\n
+      1: Yes, install RedisInsight \n
+      2: No, don't install RedisInsight\n"
+      private: no
+      default: 2
+      
   vars:
-    temp_ver:
+    redis_version_select:
       '1': '2.8.24'
       '2': '3.0.7'
       '3': '3.2.13'
       '4': '4.0.14'
       '5': '5.0.7'
       '6': 'stable'
-    redis_version: "{{temp_ver[redis_version_number]}}" 
+      
+    redis_insight_select:
+      '1': True
+      'y': True
+      '2': False
+      'n': False
+      
+    redis_version: "{{redis_version_select[redis_version_selection]}}" 
+    redis_install_redisinsight: "{{redis_insight_select[redis_insight_selection]}}" 
   
   vars_files:
     - vars/main.yml
