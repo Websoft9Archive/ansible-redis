@@ -2,7 +2,7 @@
 
 ## To do
 
-* 增加可选的GUI工具 redisinsight
+1. 研究集群
 
 ## Logs
 
@@ -12,5 +12,6 @@
 
 ### Features
 
+* 2020-05-02  增加 RedisInsight 可视化可视化工具
 * 2020-02-10  增加多版本选择
 * 2020-01-13  从yum/apt安装变更为源码编译安装
