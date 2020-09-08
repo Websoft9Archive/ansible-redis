@@ -26,7 +26,7 @@
 
 如果你使用的Redis部署方案中已经包含 RedisInsight，便可以直接在线使用  
 
-访问：*http://服务器公网IP:8001* ，即可打开 RedisInsight
+访问：*http://服务器公网IP:8002* ，即可打开 RedisInsight
 
 ## 功能
 
