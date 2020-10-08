@@ -35,9 +35,9 @@ themeConfig: {
   repo: 'Websoft9/ansible-redis',
   editLinks: true,
   docsDir: 'docs',
-  docsBranch: 'master',
+  docsBranch: 'main',
 
-  //主题多语言
+  // 主题多语言
   locales: {
     '/': {
       label: 'English',
