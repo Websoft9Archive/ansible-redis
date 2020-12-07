@@ -8,7 +8,7 @@ This documentation is provided by [Websoft9](https://www.websoft9.com/), it can 
 
 [Redis](https://redis.io/) is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster.  
 
-![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis-gui-websoft9.png)
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redis-gui-websoft9.png)
 
 ## Improve
 

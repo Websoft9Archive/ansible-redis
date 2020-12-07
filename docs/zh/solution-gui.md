@@ -7,19 +7,19 @@
 以Windows系统为例，本地电脑[下载](https://redislabs.com/redisinsight/) 安装文件，双击安装直至完成
 
 1. 启动桌面的RedisInsight图标，点击主页
-  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-ss-websoft9.png)
+  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redisinsight-ss-websoft9.png)
 
 2. 新建一个数据库连接
-  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add-websoft9.png)
+  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redisinsight-add-websoft9.png)
 
 3. 输入redis数据库连接信息（[如何开启远程连接？](/zh/solution-remote.md)）
-  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add002-websoft9.png)
+  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redisinsight-add002-websoft9.png)
 
 4. 点击已经建立好的连接
-  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add003-websoft9.png)
+  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redisinsight-add003-websoft9.png)
 
 5. 进入RedisInsight控制台页面
-  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-overview-websoft9.png)
+  ![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redisinsight-overview-websoft9.png)
 
 
 ## 在线使用
