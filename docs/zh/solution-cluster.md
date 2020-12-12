@@ -1,8 +1,8 @@
-# Redis部署架构
+# 部署架构
 
 一张图看清典型的Redis部署架构：  
 
-![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis-cluster-architecture.png)
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redis-cluster-architecture.png)
 
 ## 单机
 

@@ -4,7 +4,7 @@
 
 这里注意更新与升级这两词的差异（[延伸阅读](https://support.websoft9.com/docs/faq/zh/tech-upgrade.html#更新-vs-升级)），例如：
 - 操作系统打个补丁常称之为**更新**，Ubuntu16.04 变更为 Ubuntu18.04，称之为**升级**
-- MySQL5.6.25-->MySQL5.6.30 常称之为**更新**，MySQL5.6->MySQL5.7 称之为**升级**
+- Redis5.0.1-->Redis5.0.5 常称之为**更新**，Redis5.0->Redis6.0 称之为**升级**
 
 Redis 完整的更新升级包括：系统级更新（操作系统和运行环境）和 Redis 程序升级两种类型
 

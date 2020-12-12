@@ -8,11 +8,17 @@ Redis 预装包包含 Redis 运行所需一序列支撑软件（简称为“组�
 
 Redis 配置文件： */etc/redis.conf*  
 Redis 数据目录： */var/lib/redis*  
-Redis 日志文件： */var/log/redis/redis.log*
+Redis 日志文件： */var/log/redis/redis.log*  
+Redis 默认数据库： *redis*  
 
-### 其他
+### RedisInsight
 
-暂无辅助工具
+RedisInsight 安装目录： */data/redisinsight*  
+RedisInsight 日志文件： */data/logs/redisinsight*  
+RedisInsight 配置文件： */data/redisinsight/redisinsight.config*  
+
+访问方式：*http://服务器公网IP:8002*，可以通过 Nginx 虚拟主机配置文件修改端口
+
 
 ## 端口号
 
@@ -21,6 +27,7 @@ Redis 日志文件： */var/log/redis/redis.log*
 | 名称 | 端口号 | 用途 |  必要性 |
 | --- | --- | --- | --- |
 | Redis | 6379 | 远程访问Redis | 可选 |
+| RedisInsight | 8002 | HTTP 访问 RedisInsight  | 可选 |
 
 ## 版本号
 

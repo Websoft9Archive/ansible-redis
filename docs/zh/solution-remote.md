@@ -1,21 +1,18 @@
-# 设置 Redis 远程访问
+# 远程访问控制
 
-当你想通过本地的电脑的Redis客户端（例如：RedisInsight）连接服务器上的Redis的时候，就需要设置 Redis 的远程访问。
+虽然不建议将 Redis 公开到 Internet 直接访问，但是有些特殊场景下，比如：使用 RedisInsight 客户端，就需要设置 Redis 的远程访问。  
 
-数据库是高安全应用，设置远程访问，最少两个独立的步骤：
+数据库是高安全应用，设置远程访问，最少需三个独立的步骤：
 
-## 安全组放通6379端口
+## 设置安全组
 
-一般来说，MySQL使用的是6379端口。  
+一般来说，Redis使用的是6379端口。  
 
-首先，我们要登录到云控制台，打开云服务器所在的安全组中，保证6379端口是开启的。
+首先，我们要登录到云控制台，打开云服务器所在的安全组中，保证 **TCP:6379** 端口是开启的。
 
+## 设置白名单
 
-## 开启Redis远程连接
-
-安全组开启后，还没有完成Redis远程方案的设置。  
-
-接下来，还需要对 Redis 配置文件进行检查，以便其接受外部网络的访问。下面配置内容表示没有限制任何IP访问：
+我们提供的部署方案开启了仅允许本地访问的白名单设置：
 
 ```
 # By default Redis listens for connections from all the network interfaces
@@ -26,7 +23,32 @@
 # Examples:
 #
 # bind 192.168.1.100 10.0.0.1
-# bind 127.0.0.1
+bind 127.0.0.1
 ```
 
-如果要关闭任何IP访问，仅限于本机访问，去掉"#"，重启服务。
+* 如果不限制任何 IP，去掉"#"，重启服务。
+* 如果要增加IP绑定，自行添加一行绑定项，例如： `bind 56.2.1.114`
+
+## 开启身份验证
+
+Redis 提供了身份访问控制 [ACL](https://redis.io/topics/acl) 功能，特别是从 Redis 6.0 之后，这些功能进一步增强。  
+
+身份认证最简单的方式就是开启密码：
+
+1. 编辑 Redis 配置文件，找到如下的配置项
+
+```
+# Warning: since Redis is pretty fast an outside user can try up to
+# 150k passwords per second against a good box. This means that you should
+# use a very strong password otherwise it will be very easy to break.
+#
+# requirepass foobared
+```
+
+2. 将 `# requirepass foobared` 修改为 `requirepass yourpassword`
+   > 务必将密码设置成非常复杂的加强密码
+
+3. 重启 Redis 服务后生效
+
+
+

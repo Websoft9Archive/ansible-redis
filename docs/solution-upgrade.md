@@ -4,7 +4,7 @@ Updates and upgrades are one of the maintenance tasks for system. Programs that 
 
 You should know the differences between the terms **Update** and **Upgrade**([Extended reading](https://support.websoft9.com/docs/faq/tech-upgrade.html#update-vs-upgrade))
 - Operating system patching is **Update**, Ubuntu16.04 to Ubuntu18.04 is **Upgrade**
-- MySQL5.6.25 to MySQL5.6.30 is **Update**, MySQL5.6 to MySQL5.7 is **Upgrade**
+- Redis5.0.1 to Redis5.0.5 is **Update**, Redis5.0 to Redis6.0 is **Upgrade**
 
 For Redis maintenance, focus on the following two Update & Upgrade jobs
 
