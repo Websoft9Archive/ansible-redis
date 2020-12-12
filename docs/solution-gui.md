@@ -5,30 +5,33 @@ We suggest you use the GUI tool **RedisInsight**([download](https://redislabs.co
 RedisInsight is very powerful. It integrates management, monitoring, configuration and analysis, and can even run CLI commands.
 
 
-## Instructions from local 
+## 前置条件
 
-If you want to use **RedisInsight** from your local Windows computer, 
+查看[远程访问控制](/zh/solution-remote.md)文档，确保符合其中描述的条件。
 
-1. [Download RedisInsight](https://redislabs.com/redisinsight/) and install it
+## 使用
 
-2. Open the RedisInsight icon on your desktop and click the **homepage** link
-  ![RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-ss-websoft9.png)
+RedisInsight 实现了多平台统一性，只要打开 RedisInsight 界面，使用方式是一模一样的：  
 
-3. Create new connection
-  ![RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add-websoft9.png)
+1. 打开 RedisInsight 界面
+  
+   * 本地浏览器访问：*http://服务器公网IP:8002* ，即可打开服务器上安装的 RedisInsight
+   * 启动桌面的RedisInsight图标（[下载安装](https://redislabs.com/redisinsight/) ），打开本地安装的 RedisInsight
 
-3. Input your Redis connection([make sure to enable remote connection?](solution-remote.md))
-  ![RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add002-websoft9.png)
+   ![打开RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/en/redis/redisinsight-login-websoft9.png)
 
-4. Open the your connection created
-  ![RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-add003-websoft9.png)
+2. 选择【Connect to a Redis Server】
+   ![选择RedisInsight连接方式](https://libs.websoft9.com/Websoft9/DocsPicture/en/redis/redisinsight-connect001-websoft9.png)
 
-5. You can see the **RedisInsight** console now
-  ![RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redisinsight-overview-websoft9.png)
+3. 输入连接信息（[不知道密码](/zh/stack-accounts.md#redis)）
+   ![登录RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/en/redis/redisinsight-connect002-websoft9.png)
+   
+   * HOST：localhost （推荐） 或 服务器公网IP
+   * Port：66379
+   * Name：redis
 
+4. 成功建立一个连接
+   ![RedisInsight连接](https://libs.websoft9.com/Websoft9/DocsPicture/en/redis/redisinsight-connectss-websoft9.png)
 
-## Instructions from online
-
-If your Redis deployment solution already includes RedisInsight, you can use it directly online  
-
-Visit the URL: *http://Internet IP:8001* to open RedisInsight
+5. RedisInsight 的功能十分强大，集管理、监控、配置和分析于一体，甚至还可以运行CLI命令。
+   ![登录RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/en/redis/redisinsight-consolegui-websoft9.png)

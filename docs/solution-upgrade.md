@@ -27,3 +27,12 @@ yum update -y
 ## Redis Upgrade
 
 There's not need to upgrade under the version 5.0.x. 
+
+如何更新 Redis 5.0  到 Redis 6.0 呢？ 由于 Redis 安装非常简单，因此大版本的升级，我们建议采用重装的方式
+
+1. 备份 Redis 配置文件
+2. 运行下面的命令重装 Redis
+   ```
+   wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/main/scripts/install.sh; bash install.sh -r redis
+   ```
+3. 还原备份配置文件

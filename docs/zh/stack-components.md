@@ -19,15 +19,24 @@ RedisInsight 配置文件： */data/redisinsight/redisinsight.config*
 
 访问方式：*http://服务器公网IP:8002*，可以通过 Nginx 虚拟主机配置文件修改端口
 
+### Nginx
+
+Nginx 虚拟主机配置文件：*/etc/nginx/conf.d/default.conf*  
+Nginx 主配置文件： */etc/nginx/nginx.conf*  
+Nginx 日志文件： */var/log/nginx*  
+Nginx 伪静态规则目录： */etc/nginx/conf.d/rewrite*
+
 
 ## 端口号
 
-下面是您在使用本镜像过程中，需要用到的端口号，请通过 [云控制台安全组](https://support.websoft9.com/docs/faq/zh/tech-instance.html)进行设置
+在云服务器中，通过 **[安全组设置](https://support.websoft9.com/docs/faq/zh/tech-instance.html)** 来控制（开启或关闭）端口是否可以被外部访问。 
+
+通过命令`netstat -tunlp` 看查看相关端口，下面列出可能要用到的端口：
 
 | 名称 | 端口号 | 用途 |  必要性 |
 | --- | --- | --- | --- |
 | Redis | 6379 | 远程访问Redis | 可选 |
-| RedisInsight | 8002 | HTTP 访问 RedisInsight  | 可选 |
+| RedisInsight | 8002 | Nginx 转发访问 RedisInsight  | 可选 |
 
 ## 版本号
 
@@ -39,4 +48,7 @@ lsb_release -a
 
 # Redis version
 redis-server -v
+
+# Nginx version
+nginx -v
 ```

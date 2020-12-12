@@ -2,7 +2,7 @@
 
 A picture to see the typical Redis deployment architecture:
 
-![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis-cluster-architecture.png)
+![](https://libs.websoft9.com/Websoft9/DocsPicture/en/redis/redis-cluster-architecture.png)
 
 ## Single
 

@@ -42,4 +42,4 @@ If you have completed the Redis deployment on Cloud Platform, the following step
 
 #### Is there any Web-GUI tool for Redis in this deployment solution?
 
-No, you can refer to [Redis GUI](/solution-gui.md) chapter of this docs
+Yes, have installed [RedisInsight](/solution-gui.md) 

@@ -1,10 +1,17 @@
 # Username and Password
 
-These accounts are required for Redis image installation and configuration
+Use the **SSH** to connect your Server and run the command `sudo cat /credentials/password.txt` to get the username and password of this deployment solution.
+
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/common/catdbpassword-websoft9.png)
+
+Here are the required username and password for Redis installation and configuration.
 
 ## Redis
 
-Not set credentials for Redis
+* Redis administrator username: `admin`
+* Redis administrator password: Get it form the file of your server */credentials/password.txt*
+
+> Reset password by modify the item `requirepass` in the file [Redis configuration file](/zh/components.md#redis)
 
 ## Linux
 
