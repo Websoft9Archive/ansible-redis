@@ -24,7 +24,7 @@ RedisInsight 实现了多平台统一性，只要打开 RedisInsight 界面，�
    ![登录RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redisinsight-connect002-websoft9.png)
    
    * HOST：localhost （推荐） 或 服务器公网IP
-   * Port：66379
+   * Port：6379
    * Name：redis
 
 4. 成功建立一个连接
