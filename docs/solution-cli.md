@@ -9,15 +9,15 @@ It has two main modes:
 * and another mode where the command is sent as arguments of redis-cli, executed, and printed on the standard output.
 
 ```
-# 交互式模式（无密码验证），即进入 CLI 的随时待命状态
+# Interactive mode (no password verification), immediately entering the standby state of the CLI
 [root@iZj6calfqlbdkbj5cxjnf9Z ~]# redis-cli
 127.0.0.1:6379>
 
-# 交互式模式（密码验证），即进入 CLI 的随时待命状态
+# Interactive mode (password verification), immediately entering the standby state of the CLI
 [root@iZj6calfqlbdkbj5cxjnf9Z ~]# redis-cli -h 127.0.0.1 -p 6379 -a 123456
 127.0.0.1:6379>
 
-# 标准命令行模式，即运行一条有明确目标的命令，执行完成后自动退出
+# Standard command line mode, that is to run a command with a clear goal and exit automatically after execution
 redis-cli help
 redis-cli incr mycounter
 redis-cli --stat

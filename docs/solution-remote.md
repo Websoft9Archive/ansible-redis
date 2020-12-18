@@ -26,11 +26,11 @@ You should check your [Redis configuration file](/stack-components.md#redis) the
 
 ## Enable password
 
-Redis 提供了身份访问控制 [ACL](https://redis.io/topics/acl) 功能，特别是从 Redis 6.0 之后，这些功能进一步增强。  
+Redis provided Access Control List [ACL](https://redis.io/topics/acl), after Redis 6.0, These features have been enhanced.
 
-身份认证最简单的方式就是开启密码：
+The easiest way to authenticate is to set a password:
 
-1. 编辑 Redis 配置文件，找到如下的配置项
+1. Edit Redis config，find the 
 
 ```
 # Warning: since Redis is pretty fast an outside user can try up to
@@ -40,8 +40,9 @@ Redis 提供了身份访问控制 [ACL](https://redis.io/topics/acl) 功能，�
 # requirepass foobared
 ```
 
-2. 将 `# requirepass foobared` 修改为 `requirepass yourpassword`
-   > 务必将密码设置成非常复杂的加强密码
+2. Set password from `# requirepass foobared` to `requirepass yourpassword`
+   > Be sure to set the password whic is a very complex  password
+   > For local access mode, if password authentication is turned off, you can still connect to access; for remote access, you must set a password to access
 
-3. 重启 Redis 服务后生效
+3. After restart Redis service, it will take effect
 

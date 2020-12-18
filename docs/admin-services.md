@@ -21,6 +21,7 @@ sudo systemctl status redisinsight
 ```
 
 ### Nginx
+
 ```shell
 sudo systemctl start nginx
 sudo systemctl stop nginx

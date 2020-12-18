@@ -32,9 +32,9 @@ Redis是一个字典结构的存储服务器，一个 Redis 实例对应多个�
     redis-server /etc/redis/redis_6378.conf
     ```
 
-## 修改 RedisInsight 访问端口
+## Edit RedisInsight access port
 
-编辑 [Nginx 虚拟主机配置文件](/zh/stack-components.md#nginx) 中的参数 `listen` 的值即重置密码。
+Edit[Nginx Vhost](/stack-components.md#nginx) parameter `listen` of value, can reset the password
 
 ```
 server {
@@ -42,9 +42,9 @@ server {
     server_name example.yourdomain.com;
 ```
  
-## 重置密码
+## Reset password
 
-编辑 [Redis 配置文件](/zh/stack-components.md#redis) 中的参数 `requirepass` 的值即重置密码。
+Edit [Redis Config](/zh/stack-components.md#redis) parameter `requirepass` of value, can reset the password
 ```
 # Warning: since Redis is pretty fast an outside user can try up to
 # 150k passwords per second against a good box. This means that you should

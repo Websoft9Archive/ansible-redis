@@ -5,15 +5,15 @@ We suggest you use the GUI tool **RedisInsight**([download](https://redislabs.co
 RedisInsight is very powerful. It integrates management, monitoring, configuration and analysis, and can even run CLI commands.
 
 
-## 前置条件
+## Preconditions
 
-查看[远程访问控制](/zh/solution-remote.md)文档，确保符合其中描述的条件。
+View[Remote Document](/solution-remote.md),confirm matching the basic condition.
 
-## 使用
+## Use
 
-RedisInsight 实现了多平台统一性，只要打开 RedisInsight 界面，使用方式是一模一样的：  
+RedisInsight realize the unity of multiple platforms, if start the RedisInsight, how to user it is same: 
 
-1. 打开 RedisInsight 界面
+1. Start RedisInsight, access init page
   
    * 本地浏览器访问：*http://服务器公网IP:8002* ，即可打开服务器上安装的 RedisInsight
    * 启动桌面的RedisInsight图标（[下载安装](https://redislabs.com/redisinsight/) ），打开本地安装的 RedisInsight
@@ -27,7 +27,7 @@ RedisInsight 实现了多平台统一性，只要打开 RedisInsight 界面，�
    ![登录RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/en/redis/redisinsight-connect002-websoft9.png)
    
    * HOST：localhost （推荐） 或 服务器公网IP
-   * Port：66379
+   * Port：6379
    * Name：redis
 
 4. 成功建立一个连接

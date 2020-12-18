@@ -33,7 +33,7 @@ bind 127.0.0.1
 
 Redis 提供了身份访问控制 [ACL](https://redis.io/topics/acl) 功能，特别是从 Redis 6.0 之后，这些功能进一步增强。  
 
-身份认证最简单的方式就是开启密码：
+身份认证最简单的方式就是开启密码:
 
 1. 编辑 Redis 配置文件，找到如下的配置项
 
@@ -47,6 +47,7 @@ Redis 提供了身份访问控制 [ACL](https://redis.io/topics/acl) 功能，�
 
 2. 将 `# requirepass foobared` 修改为 `requirepass yourpassword`
    > 务必将密码设置成非常复杂的加强密码
+   > 本地访问方式，如果关闭密码认证，任然可以连接访问；远程方式必须设置密码才能访问
 
 3. 重启 Redis 服务后生效
 
