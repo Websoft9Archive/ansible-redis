@@ -20,6 +20,20 @@ Redis have not users
 
 Multiple redis instances can be run on a server. Each instance has 16 databases, and the default database is db0.
 
+![Redis DataBases](https://libs.websoft9.com/Websoft9/DocsPicture/en/redis/redis-database-websoft9.png)
+
+> redis-cli how to change database
+
+```
+# Interactive mode (no password verification), immediately entering the standby state of the CLI
+[root@iZj6calfqlbdkbj5cxjnf9Z ~]# redis-cli
+127.0.0.1:6379>
+
+# Change default database 0 to 1
+redis 127.0.0.1:6379> SELECT 1
+
+```
+
 #### Redis Communication Version vs Redis Enterprise Version
 
 * Redis Communication Version: High performance data caching service compatible with open source redis, suitable for standard redis usage scenarios without special business requirements.
