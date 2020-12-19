@@ -11,7 +11,7 @@ View[Remote Document](/solution-remote.md),confirm matching the basic condition.
 
 ## Use
 
-RedisInsight realize the unity of multiple platforms, if start the RedisInsight, how to user it is same: 
+RedisInsight realize the unity of multiple platforms, if start the RedisInsight, how to use it is same: 
 
 1. Start RedisInsight, access init page
    * Using local Chrome or Firefox to visit the URL  *https://Internet IP:8002*, open the web RedisInsight
