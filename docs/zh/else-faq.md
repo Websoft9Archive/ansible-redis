@@ -12,7 +12,18 @@ Redis 客户端是用于与Redis-Server进行通信的程序，例如：redis-cl
 
 一台机器上可以运行多个 Redis 实例，每个实例有16个数据库，默认数据库为db0。
 
-[Redis DataBases](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redis-database-websoft9.png)
+![Redis DataBases](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redis-database-websoft9.png)
+
+```
+# Interactive mode (no password verification), immediately entering the standby state of the CLI
+[root@iZj6calfqlbdkbj5cxjnf9Z ~]# redis-cli
+127.0.0.1:6379>
+
+# Change default database 0 to 1
+redis 127.0.0.1:6379> SELECT 1
+
+```
+
 
 #### Redis社区版 vs Redis企业版
 
