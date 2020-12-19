@@ -12,6 +12,8 @@ Redis 客户端是用于与Redis-Server进行通信的程序，例如：redis-cl
 
 一台机器上可以运行多个 Redis 实例，每个实例有16个数据库，默认数据库为db0。
 
+[Redis DataBases](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redis-database-websoft9.png)
+
 #### Redis社区版 vs Redis企业版
 
 * Redis社区版：兼容开源Redis的高性能数据缓存服务，适用于标准的、无特殊业务需求的Redis使用场景。
