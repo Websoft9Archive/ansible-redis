@@ -12,6 +12,7 @@ Redis 客户端是用于与Redis-Server进行通信的程序，例如：redis-cl
 
 一台机器上可以运行多个 Redis 实例，每个实例有16个数据库，默认数据库为db0。
 
+> redis-cli 如何切换数据库
 ![Redis DataBases](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redis-database-websoft9.png)
 
 ```
