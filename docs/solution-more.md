@@ -2,32 +2,32 @@
 
 Each of the following solutions has been proven to be effective and We hope to be helpful to you.
 
-## 持久化
+## Persistence
 
-Redis 支持 RDB 和 AOF 两种持久化方式：
+Redis supports RDB and AOF persistence way:
 
-* RDB：即通过快照技术，将内存中的数据生成一份副本并保存到磁盘指定的目录中；
-* AOF：即通过协议文本的方式，将所有对数据库进行过写入的命令（及其参数）记录到 AOF 文件，以此达到记录数据库状态的目的，非常类似 MySQL 的二进制日志
+* RDB：through snapshot technology, a copy of the data in memory is generated and saved to the specified directory on the disk
+* AOF：In other words, all commands (and their parameters) that have been written to the database are recorded to the AOF file by means of protocol text, so as to achieve the purpose of recording database status, which is very similar to the binary log of MySQL
 
-## 多实例
+## Multiple instances
 
-Redis是一个字典结构的存储服务器，一个 Redis 实例对应多个字典（默认支持16个字典，从0开始编号），客户端可以指定将数据存储在哪个字典中。非常类似在关系数据库中建库。
+Redis is a dictionary hash structure storage server, one Redis has 16 dictionary hash(form 0 to 15, default 0), The client can specify which dictionary to store the data in. It is very similar to building a database in a relational database.
 
-虽然 Redis 没有多数据库，但通常我们会在一台服务器上启动多个 Redis 实例：
+Usually, we will start multiple redis instances on one server:
 
-1. 准备好第二个实例所需的端口，假如为：6378
+1. Prepare the ports required for the second instance, example for port: 6378
 
-2. 复制现有的 redis.conf 文件，命名为 redis_6378.conf
+2. Copy redis.conf file, named redis_6378.conf
 
-3. 正确填写配置项
-    | 配置名    | 配置说明                                   |
+3. Fill in the configuration item correctly
+    | Configuration item    | Configuration description                                   |
     | --------- | ------------------------------------------ |
-    | port      | 端口                                       |
-    | logfile   | 日志文件                                   |
-    | dir       | Redis 工作目录（存放持久化文件和日志文件） |
-    | daemonize | 是否已守护进程方式启动 Redis（yes 或 no）  |
+    | port      | server port                    |
+    | logfile   | log files                                   |
+    | dir       | Redis work directory |
+    | daemonize | Whether it has been started in daemons mode Redis(yes or no)  |
 
-4. 启动服务
+4. Start service
     ```
     redis-server /etc/redis/redis_6378.conf
     ```

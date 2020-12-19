@@ -18,7 +18,7 @@ Redis have not users
 
 #### Redis supports multiple databases？
 
-Multiple redis instances can be run on a server. Each instance has 16 databases, and the default database is 16.
+Multiple redis instances can be run on a server. Each instance has 16 databases, and the default database is db0.
 
 #### Redis Communication Version vs Redis Enterprise Version
 

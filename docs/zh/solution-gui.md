@@ -31,4 +31,4 @@ RedisInsight 实现了多平台统一性，只要打开 RedisInsight 界面，�
    ![RedisInsight连接](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redisinsight-connectss-websoft9.png)
 
 5. RedisInsight 的功能十分强大，集管理、监控、配置和分析于一体，甚至还可以运行CLI命令。
-   ![登录RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redisinsight-consolegui-websoft9.png)
+   ![RedisInsight后台](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redisinsight-consolegui-websoft9.png)
