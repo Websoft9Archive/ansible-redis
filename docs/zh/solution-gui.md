@@ -13,7 +13,7 @@ RedisInsight 实现了多平台统一性，只要打开 RedisInsight 界面，�
 1. 打开 RedisInsight 界面
   
    * 本地浏览器访问：*http://服务器公网IP:8002* ，即可打开服务器上安装的 RedisInsight
-   * 启动桌面的RedisInsight图标（[下载安装](https://redislabs.com/redisinsight/) ），打开本地安装的 RedisInsight
+   * 启动桌面的 RedisInsight 图标，打开本地安装的 RedisInsight
 
    ![打开RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redisinsight-login-websoft9.png)
 

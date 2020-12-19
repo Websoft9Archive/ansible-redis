@@ -56,10 +56,10 @@ sidebarDepth: 3
 
 1. 使用SSH登录服务器，使用redis-cli工具运行**SAVE** 命令
 ```shell
-[root@cdl-test ~]# redis-cli
+[root@w9 ~]# redis-cli
 127.0.0.1:6379> SAVE
 OK
 ```
-2. You can find the bakcup file `dump.rdb` in the  */var/lib/redis*
+2. 备份文件 `dump.rdb` 存放在 */var/lib/redis* 目录下
 
 

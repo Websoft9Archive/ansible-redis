@@ -4,7 +4,7 @@ You can configure Redis by modify `redis.conf` file, and run the **CONFIG** comm
 
 ## Get configuration items
 
-run the command: `CONFIG GET *` to list all configuration items
+run the command `CONFIG GET *` to list all configuration items
 
 ```
   127.0.0.1:6379> CONFIG GET *
@@ -141,7 +141,7 @@ run the command: `CONFIG GET CONFIG_SETTING_NAME` to get the specified item
 ```
 ## Edit configuration item
 
-You can modify the  `redis.conf` file directly or use **CONFIG set** for configuration
+You can modify the `redis.conf` file directly or use `CONFIG set` for configuration
 
 **commands Syntax format:**
 

@@ -23,7 +23,7 @@ Websoft9 published [Redis image](https://apps.websoft9.com/redis) on Cloud Platf
 
 **Deploy by Script** means running a script on your cloud instance to pull the pre-packages online to your instance and configure it at the same time.
 
-Websoft9 provide the [Redis ansbile automation script](https://github.com/Websoft9/ansible-redis) on Github. If you are familiar with Ansible, you can deploy the Redis to the instance automaticly.
+Websoft9 provide the [Redis ansbile automation script](https://github.com/Websoft9/ansible-redis) on Github. If you are familiar with Ansible, you can deploy the Redis to the instance automatically.
 
 ## Comparison
 

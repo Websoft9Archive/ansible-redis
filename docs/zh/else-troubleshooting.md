@@ -25,3 +25,7 @@ free -lh
 问题：运行命令：sudo systemctl status redis，状态是active，但是下面有段报错信息：Can't open PID file /var/run/redis.pid (yet?) after start: No such file or directory  
 原因：Redis自身的服务PID被其他服务占用  
 方案：检查自行创建的服务是否占用了默认服务
+
+#### 端口被占用？
+
+如果运行多个 Redis 实例，需保证每个实例的配置文件中的端口不同，否则会导致端口被占用

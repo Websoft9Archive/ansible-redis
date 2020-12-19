@@ -1,6 +1,8 @@
 # Redis remote connection
 
-Although we don't suggest you access Redis from Internet, but sometime you may need to do this. e.g. Using **RedisInsight**.
+Although we don't suggest you access Redis from Internet, but sometime you may need to do this.  
+
+e.g. Using **RedisInsight**.
 
 Then, you need to configure your redis remote by the following steps:
 
@@ -28,9 +30,9 @@ You should check your [Redis configuration file](/stack-components.md#redis) the
 
 Redis provided Access Control List [ACL](https://redis.io/topics/acl), after Redis 6.0, These features have been enhanced.
 
-The easiest way to authenticate is to set a password:
+Enable password is need for Internet access, the easiest way to authenticate is to set a password:
 
-1. Edit Redis config，find the 
+1. Edit [Redis config file](/stack-components.md#redis),find the item below
 
 ```
 # Warning: since Redis is pretty fast an outside user can try up to
@@ -44,5 +46,5 @@ The easiest way to authenticate is to set a password:
    > Be sure to set the password whic is a very complex  password
    > For local access mode, if password authentication is turned off, you can still connect to access; for remote access, you must set a password to access
 
-3. After restart Redis service, it will take effect
+3. After [restart Redis service](/admin-service.md#redis), it will take effect
 

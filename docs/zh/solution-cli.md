@@ -8,11 +8,11 @@ Redis CLI 支持交互式模式和标准命令行两种使用方式：
 
 ```
 # 交互式模式（无密码验证），即进入 CLI 的随时待命状态
-[root@iZj6calfqlbdkbj5cxjnf9Z ~]# redis-cli
+redis-cli
 127.0.0.1:6379>
 
 # 交互式模式（密码验证），即进入 CLI 的随时待命状态
-[root@iZj6calfqlbdkbj5cxjnf9Z ~]# redis-cli -h 127.0.0.1 -p 6379 -a 123456
+redis-cli -h 127.0.0.1 -p 6379 -a 123456
 127.0.0.1:6379>
 
 # 标准命令行模式，即运行一条有明确目标的命令，执行完成后自动退出

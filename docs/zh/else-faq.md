@@ -10,7 +10,7 @@ Redis 客户端是用于与Redis-Server进行通信的程序，例如：redis-cl
 
 #### Redis 支持多数据库吗？
 
-一台机器上可以运行多个 Redis 实例，每个实例有16个数据库，默认数据库为db0。
+单服务器可运行多个 Redis 实例，每个实例有16个数据库(每库类似哈希表)，默认数据库为 db0。
 
 ![Redis DataBases](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redis-database-websoft9.png)
 
@@ -26,7 +26,6 @@ redis 127.0.0.1:6379> SELECT 1
 
 ```
 
-
 #### Redis社区版 vs Redis企业版
 
 * Redis社区版：兼容开源Redis的高性能数据缓存服务，适用于标准的、无特殊业务需求的Redis使用场景。
@@ -38,7 +37,7 @@ redis 127.0.0.1:6379> SELECT 1
 
 #### Redis需要密码才能登录吗？
 
-可以无需设置密码验证
+可以无需设置密码验证，只要外网访问才需要开启数据库密码
 
 #### Redis 支持哪些数据结构？
 
