@@ -1,17 +1,8 @@
 # CHANGELOG
 
-## To do
-
-1. 研究集群
-
-## Logs
-
-### Bug Fixes
-
-* 2020-02-14  redis-version版本号输出
-
-### Features
-
-* 2020-05-02  增加 RedisInsight 可视化可视化工具，采用Nginx的8002端口作为外部访问端口
-* 2020-02-10  增加多版本选择
-* 2020-01-13  从yum/apt安装变更为源码编译安装
+## Release v6.0.9-1   2020-12-22
+### Fixes and Enhancements
+- Redis configuration file # bind internet IP cause service can't start #7
+- WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the comman #5
+- scl enable devtoolset-7 llvm-toolset-7 bash waiting for long time in the task Install GCC for Redis6.0 #8
+- Enable IP bind and password auth #4
