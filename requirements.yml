@@ -6,6 +6,8 @@
 
 - src: https://github.com/websoft9dev/role_redis
 
+- src: https://github.com/websoft9dev/role_init
+
 - src: https://github.com/websoft9dev/role_preend
 
 - src: https://github.com/websoft9dev/role_end
