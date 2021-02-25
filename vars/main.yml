@@ -2,7 +2,7 @@ nginx_reverse_proxy_port: "8001"
 nginx_listen_port: "8002"
 
 redis_configuration_extras:
-  - name: '#requirepass'
+  - name: '# requirepass'
     value: 'requirepass 123456'
 
 common_os_support: ["CentOS", "Ubuntu", "Amazon"]
