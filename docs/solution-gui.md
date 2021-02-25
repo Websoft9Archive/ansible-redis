@@ -22,10 +22,10 @@ RedisInsight realize the unity of multiple platforms, it have the same steps:
 2. Select 【Connect to a Redis Server】
    ![Select RedisInsight connect way](https://libs.websoft9.com/Websoft9/DocsPicture/en/redis/redisinsight-connect001-websoft9.png)
 
-3. Input connect information [don't know password?](/stack-accounts.md#redis)
+3. Input connect information 
    ![Login RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/en/redis/redisinsight-connect002-websoft9.png)
    
-   * HOST：localhost (recommendation) or  Internet IP
+   * HOST：localhost (recommendation) or  Internet IP (Redis open remote)
    * Port：6379
    * Name：redis
 

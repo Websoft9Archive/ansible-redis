@@ -23,7 +23,7 @@ RedisInsight 实现了多平台统一性，只要打开 RedisInsight 界面，�
 3. 输入连接信息（[不知道密码](/zh/stack-accounts.md#redis)）
    ![登录RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redisinsight-connect002-websoft9.png)
    
-   * HOST：localhost （推荐） 或 服务器公网IP
+   * HOST：localhost （推荐） 或 服务器公网IP（Redis已开启远程的状态）
    * Port：6379
    * Name：redis
 
