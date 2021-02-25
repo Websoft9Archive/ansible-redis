@@ -11,5 +11,6 @@ init_db:
   redis:
     admin: ""
     password: "123456"
+    service_before: redis
     config_paths:
       - /etc/redis/redis_server_0.conf
