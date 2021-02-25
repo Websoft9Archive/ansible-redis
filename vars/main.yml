@@ -9,6 +9,7 @@ common_os_support: ["CentOS", "Ubuntu", "Amazon"]
 
 init_db: 
   redis:
+    admin: ""
     password: "123456"
     config_paths:
       - /etc/redis/redis_server_0.conf
