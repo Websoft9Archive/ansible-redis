@@ -50,6 +50,7 @@
     - {role: role_common, tags: "role_common"}  
     - {role: role_cloud, tags: "role_cloud"}  
     - {role: role_nginx, tags: "role_nginx", when: redis_install_redisinsight}  
-    - {role: role_redis, tags: "role_redis"}  
+    - {role: role_redis, tags: "role_redis"}
+    - {role: role_init, tags: "role_init"} 
     - {role: role_preend, tags: "role_preend"}
     - {role: role_end, tags: "role_end"}
