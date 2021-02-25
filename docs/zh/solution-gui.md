@@ -20,7 +20,7 @@ RedisInsight 实现了多平台统一性，只要打开 RedisInsight 界面，�
 2. 选择【Connect to a Redis Server】
    ![选择RedisInsight连接方式](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redisinsight-connect001-websoft9.png)
 
-3. 输入连接信息
+3. 输入连接信息（[不知道密码](/zh/stack-accounts.md#redis)）
    ![登录RedisInsight](https://libs.websoft9.com/Websoft9/DocsPicture/zh/redis/redisinsight-connect002-websoft9.png)
    
    * HOST：localhost （推荐） 或 服务器公网IP（Redis已开启远程的状态）
