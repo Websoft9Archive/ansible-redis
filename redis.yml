@@ -13,7 +13,8 @@
       4: Redis4.0\n
       5: Redis5.0\n
       6: Redis6.0\n
-      7: Redis-Latest\n"
+      7: Redis6.2\n
+      8: Redis-Latest\n"
       private: no
       default: 6
       
@@ -32,7 +33,8 @@
       '4': '4.0'
       '5': '5.0'
       '6': '6.0'
-      '7': 'stable'
+      '7': '6.2'
+      '8': 'stable'
       
     redis_insight_select:
       '1': True
@@ -49,7 +51,6 @@
   roles:
     - {role: role_common, tags: "role_common"}  
     - {role: role_cloud, tags: "role_cloud"}  
-    - {role: role_nginx, tags: "role_nginx", when: redis_install_redisinsight}  
     - {role: role_redis, tags: "role_redis"}
     - {role: role_init, tags: "role_init"} 
     - {role: role_preend, tags: "role_preend"}

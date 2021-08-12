@@ -1,5 +1,4 @@
-nginx_reverse_proxy_port: "8001"
-nginx_listen_port: "8002"
+redis_REDISINSIGHT_PORT: 8002
 
 redis_configuration_extra:
   - name: '# requirepass'
