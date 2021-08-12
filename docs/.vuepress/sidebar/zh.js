@@ -32,7 +32,6 @@ module.exports = [
     children: [
       '/zh/admin-services',
       '/zh/admin-configfile',
-      ['https://support.websoft9.com/docs/linux/webs-nginx.html','Nginx'],
       ['https://support.websoft9.com/docs/linux/zh/admin-practices.html','Linux'],
     ]
   },

@@ -19,13 +19,3 @@ sudo systemctl stop redisinsight
 sudo systemctl restart redisinsight
 sudo systemctl status redisinsight
 ```
-
-### Nginx
-
-```shell
-sudo systemctl start nginx
-sudo systemctl stop nginx
-sudo systemctl restart nginx
-sudo systemctl status nginx
-```
-

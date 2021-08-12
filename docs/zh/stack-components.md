@@ -17,14 +17,7 @@ RedisInsight 安装目录： */data/redisinsight*
 RedisInsight 日志文件： */data/logs/redisinsight*  
 RedisInsight 配置文件： */data/redisinsight/redisinsight.config*  
 
-访问方式：*http://服务器公网IP:8002*，可以通过 Nginx 虚拟主机配置文件修改端口
-
-### Nginx
-
-Nginx 虚拟主机配置文件：*/etc/nginx/conf.d/default.conf*  
-Nginx 主配置文件： */etc/nginx/nginx.conf*  
-Nginx 日志文件： */var/log/nginx*  
-Nginx 伪静态规则目录： */etc/nginx/conf.d/rewrite*
+访问方式：*http://服务器公网IP:8002*  
 
 
 ## 端口号
@@ -36,7 +29,7 @@ Nginx 伪静态规则目录： */etc/nginx/conf.d/rewrite*
 | 名称 | 端口号 | 用途 |  必要性 |
 | --- | --- | --- | --- |
 | Redis | 6379 | 远程访问Redis | 可选 |
-| RedisInsight | 8002 | Nginx 转发访问 RedisInsight  | 可选 |
+| RedisInsight | 8002 | HTTP 访问 RedisInsight  | 可选 |
 
 ## 版本号
 
@@ -48,7 +41,4 @@ lsb_release -a
 
 # Redis version
 redis-server -v
-
-# Nginx version
-nginx -v
 ```

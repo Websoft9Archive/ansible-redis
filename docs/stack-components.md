@@ -20,13 +20,6 @@ RedisInsight configuration file: */data/redisinsight/redisinsight.config*
 
 You can access it by URL: *http://Server's Internet IP:8002*
 
-### Nginx
-
-Nginx vhost configuration file: */etc/nginx/conf.d/default.conf*    
-Nginx main configuration file: */etc/nginx/nginx.conf*   
-Nginx logs file: */var/log/nginx*  
-Nginx rewrite rules directory: */etc/nginx/conf.d/rewrite* 
-
 ## Ports
 
 Open or close ports by **[Security Group Setting](https://support.websoft9.com/docs/faq/tech-instance.html)** of your Cloud Server to decide whether the port can be accessed from Internet.  
@@ -38,7 +31,7 @@ The following are the ports you may use:
 | Name | Number | Use |  Necessity |
 | --- | --- | --- | --- |
 | Redis | 6379 | Remote connect Redis | Optional |
-| RedisInsight | 8002 | Nginx proxy for access to RedisInsight | Optional |
+| RedisInsight | 8002 | HTTP access to RedisInsight | Optional |
 
 ## Version
 
@@ -50,7 +43,4 @@ lsb_release -a
 
 # Redis version
 redis-server -v
-
-# Nginx version
-nginx -v
 ```
