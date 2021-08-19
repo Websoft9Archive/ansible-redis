@@ -16,11 +16,11 @@
 | 私有云|  KVM, VMware, VirtualBox, OpenStack | 可选 |
 | 服务器配置 | 最低1核1G，存储20GB以上，Swap分区2GB以上 |  建议采用按量100M带宽 |
 
-更多请见： [官方 System requirement](https://redis.io/download)。
+更多请见： [官方 System requirement](https://redis.io/documentation)。
 
 ## 组件
 
-包含的核心组件为：Redis, Nginx  
+包含的核心组件为：Redis, RedisInsight, Nginx  
 
 更多请见: [参数表](/docs/zh/stack-components.md)。
 
@@ -54,7 +54,7 @@ wget -N https://ghproxy.com/https://raw.githubusercontent.com/Websoft9/ansible-l
 
 #### 本项目安装的是 Redis 最新版吗？
 
-本项目通过包安装，请通过[官方URL](http://download.redis.io/releases/)页面查看版本号。  
+本项目通过下载源码编译安装，请通过[官方URL](http://download.redis.io/releases/)页面查看版本号。  
 我们会定期检查[Release版本](https://github.com/Websoft9/ansible-redis/releases)，更新并测试此项目，以保证用户可以顺利安装所需的Redis版本。 
  
 #### 命令脚本部署与镜像部署有什么区别？
