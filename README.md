@@ -1,86 +1,75 @@
+# Redis Cloud Installer
 
-# Redis 自动化安装与部署
+![](https://libs.websoft9.com/common/websott9-cloud-installer.png) 
 
-本项目是由 [Websoft9](https://www.websoft9.com) 研发的 [Redis](https://redis.io/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 Redis，让原本复杂的安装过程变得没有任何技术门槛。  
+## Introduction
 
-本项目是开源项目，采用 LGPL3.0 开源协议。
+[English](/README.md) | [简体中文](/README-zh.md)  
 
-## 配置要求
+**Redis Cloud Installer**, developed by [Websoft9](https://www.websoft9.com), is an automatic installation program of [Redis](https://redis.io/) based on Ansible and shell. It helps user install Redis and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
 
-安装本项目，确保符合如下的条件：
+## System Requirement
 
-| 条件       | 详情       | 备注  |
-| ------------ | ------------ | ----- |
-| 操作系统       | CentOS7.x, Ubuntu18.04, Amazon Linux2       |    |
-| 公有云| AWS, Azure, 阿里云, 华为云, 腾讯云 |  |
-| 私有云|  KVM, VMware, VirtualBox, OpenStack |  |
-| 服务器配置 | 最低1核1G，安装时所需的带宽不低于10M |  建议采用按量100M带宽 |
+System Requirement to install this repository are as following：
 
-## 组件
+| Conditions       | Details                               | Notes                |
+| ------------------- | --------------------------------| -------------------- |
+| Operating System   | CentOS7.x, Ubuntu20.04, Amazon Linux2 | Optional                 |
+| Public Cloud     | AWS, Azure, Alibaba Cloud, HUAWEI ClOUD, Tencent Cloud    | Optional                 |
+| Private Cloud     | KVM, VMware, VirtualBox, OpenStack    | Optional                 |
+| Server Configuration | vCPU no less than 2 core, Memory no less than 4 GIB, Storage no less than 20 GB, Swap no less than 2GB |Bandwidth no less than 100M|
 
-包含的核心组件为：可选 Redis2.8.24/3.0.7/3.2.13/4.0.14/5.0.9/stable 多个版本
+To learn more information, please view [Installation & Configuration](https://redis.io/download).
 
-更多请见[参数表](/docs/zh/stack-components.md)
+## Ecosystem
 
-## 本项目安装的是 Redis 最新版吗？
+Core components of this repository: Redis, Nginx
 
-本项目是下载[Redis源码](http://download.redis.io/releases/)，再通过编译安装。 启动安装后，安装过程会提示用户选择一个Redis版本。
+Learn more about [Parameters](/docs/stack-components.md).
 
-查看 [redis.yml](/redis.yml) 文件中版本选择的内容，来查看和维护具体的详细版本号
+## Installation
 
-```
-  vars_prompt:
-    - name: 'redis_version_number'
-      prompt: "\nPlease choose the number for Redis version [ 1/2/3/4/5/6 ] \n\n
-      1: Redis2.8.24\n
-      2: Redis3.0.7\n
-      3: Redis3.2.13\n
-      4: Redis4.0.14\n
-      5: Redis5.0.7\n
-      6: Redis-Latest\n"
-      private: no
-      default: 6
-  vars:
-    temp_ver:
-      '1': '2.8.24'
-      '2': '3.0.7'
-      '3': '3.2.13'
-      '4': '4.0.14'
-      '5': '5.0.7'
-      '6': 'stable'
-```
+You can install it by thi Cloud Installer solution all in one. In addition, you can deploy image published on major Cloud Platform by Websoft9.
 
-Redis-Latest 是官方发布的最新Stable版本，但还没有形成正式的发行版  
+#### All-in-one Installer
 
-我们会定期检查版本准确性，并增加官方最新的stable版本，以保证用户可以顺利安装所需的Redis版本。
-
-## 安装指南
-
-以 root 用户登录 Linux，运行下面的**一键自动化安装命令**即可启动自动化部署。若没有 root 用户，请以其他用户登录 Linux 后运行 `sudo su -` 命令提升为 root 权限，然后再运行下面的脚本。
+Run the automatic installation script with **root** authority to start the installation. If necessary, users need to make interactive choices, and then wait patiently until the installation is successful.
 
 ```
-wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/main/scripts/install.sh; bash install.sh -r redis
+$ sudo su -
+$ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/main/scripts/install.sh; bash install.sh -r redis
 ```
 
-脚本后启动，就开始了自动化安装，必要时需要用户做出交互式选择，然后耐心等待直至安装成功。
+If the network is broken or blocked, SSH will be interrupted and the installation will fail. Please reinstall.
 
-**安装中的注意事项：**  
+#### Image on Cloud 
 
-1. 操作不慎或网络发生变化，可能会导致SSH连接被中断，安装就会失败，此时请重新安装
-2. 安装缓慢、停滞不前或无故中断，主要是网络不通（或网速太慢）导致的下载问题，此时请重新安装
+Follow our [Redis image](https://apps.websoft9.com/redis) for installation on major Cloud Platform.
 
-多种原因导致无法顺利安装，请使用我们在公有云上发布的 [Redis 镜像](https://apps.websoft9.com/redis) 的部署方式
+## Documentation
+
+**[Administrator Guide](https://support.websoft9.com/docs/redis)** 
 
 ## License
 
 [LGPL-3.0](/License.md), Additional Terms: It is not allowed to publish free or paid image based on this repository in any Cloud platform's Marketplace.
+
 Copyright (c) 2016-present, Websoft9
 
-## 文档
-
-文档链接：https://support.websoft9.com/docs/redis/zh
+This program provided by Websoft9 contains a series of software with separate copyright notices and license terms. Your use of the source code for the software included is subject to the terms and conditions of its own license.
 
 ## FAQ
 
-- 命令脚本部署与镜像部署有什么区别？请参考：[镜像部署-vs-脚本部署](https://support.websoft9.com/docs/faq/zh/bz-product.html#镜像部署-vs-脚本部署)
-- 本项目支持在 Ansible Tower 上运行吗？支持
+#### How to install and view the latest release?
+
+This repository install way is Package, you can  view the version from [Official URL](https://download.redis.io/releases/).  
+We will check [Release version](https://github.com/Websoft9/ansible-redis/releases) regularly. Update and test this project to ensure that users can successfully install the required version of Redis.
+
+#### Can I run this repository on Ansible Tower? 
+
+Yes.
+
+#### Although the results of the deploy by image are consistent with the results of deploy by script, what is the difference between the two deployment methods?
+
+Suggest you read the document [Deploy by Image vs Deploy by Script](https://support.websoft9.com/docs/faq/bz-product.html#deployment-comparison).
+
