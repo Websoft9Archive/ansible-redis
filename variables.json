@@ -8,11 +8,11 @@
   "requirements_Bandwidth": "100",
   "requirements_disk": "20",
   "requirements_swap": "2",
-  "requirements_configure_url": "https://redis.io/download",
-  "components": "Redis, Nginx",
+  "requirements_configure_url": "https://redis.io/documentation",
+  "components": "Redis, RedisInsight, Nginx",
   "install_way": {
-    "en": "Package",
-    "zh": "包安装"
+    "en": "Compile isntallation for source",
+    "zh": "下载源码编译安装"
   },
   "install_url": "http://download.redis.io/releases/"
 }
