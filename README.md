@@ -19,11 +19,11 @@ System Requirement to install this repository are as following：
 | Private Cloud     | KVM, VMware, VirtualBox, OpenStack    | Optional                 |
 | Server Configuration | vCPU no less than 1 core, Memory no less than 1 GIB, Storage no less than 20 GB, Swap no less than 2GB |Bandwidth no less than 100M|
 
-To learn more information, please view [Installation & Configuration](https://redis.io/download).
+To learn more information, please view [Installation & Configuration](https://redis.io/documentation).
 
 ## Ecosystem
 
-Core components of this repository: Redis, Nginx
+Core components of this repository: Redis, RedisInsight, Nginx
 
 Learn more about [Parameters](/docs/stack-components.md).
 
@@ -62,7 +62,7 @@ This program provided by Websoft9 contains a series of software with separate co
 
 #### How to install and view the latest release?
 
-This repository install way is Package, you can  view the version from [Official URL](http://download.redis.io/releases/).  
+This repository install way is Compile isntallation for source, you can  view the version from [Official URL](http://download.redis.io/releases/).  
 We will check [Release version](https://github.com/Websoft9/ansible-redis/releases) regularly. Update and test this project to ensure that users can successfully install the required version of Redis.
 
 #### Can I run this repository on Ansible Tower? 
