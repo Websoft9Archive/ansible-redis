@@ -30,7 +30,27 @@
    ```
    ubuntu@redis:~$ redis-cli
    127.0.0.1:6379>
+
+   //密码登录
+   redis-cli -h 127.0.0.1 -p 6379 -a <password>
+   127.0.0.1:6379>
    ```
+   
+5. PHP 连接 redis 读写操作
+
+   ```
+   <?php
+   
+   $redis = new Redis();
+   $redis->connect('127.0.0.1', 6379);
+   $redis->auth('password');
+   $redis->set('Websoft9', 9);
+   echo $redis->get('Websoft9'); 
+
+   ?>
+   
+   ```
+
 
 > 需要了解更多Redis的使用，请参考：[Redis Documentation](https://redis.io/documentation)
 
