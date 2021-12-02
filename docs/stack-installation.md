@@ -30,7 +30,28 @@ If you have completed the Redis deployment on Cloud Platform, the following step
    ```
    ubuntu@redis:~$ redis-cli
    127.0.0.1:6379>
+ 
+   //use password
+   redis-cli -h 127.0.0.1 -p 6379 -a <password>
+   127.0.0.1:6379>
    ```
+
+5. PHP connect to redis
+
+   ```
+   <?php
+   
+   $redis = new Redis();
+   $redis->connect('127.0.0.1', 6379);
+   $redis->auth('password');
+   $redis->set('Websoft9', 9);
+   echo $redis->get('Websoft9'); 
+   
+   ?>
+   
+   ```
+   
+   
 > More useful Redis guide, please refer to [Redis Documentation](https://redis.io/documentation)
 
 ## Q&A 
